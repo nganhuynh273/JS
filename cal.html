@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng máy tính</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <input id="number1" type="number" />
+            </td>
+            <td>
+                <input id="number2" type="number" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input value="Addition(+)" onclick="Add()" type="button">
+                <input value="Subtraction(-)" onclick="Sub()" type="button">
+            </td>
+            <td>
+                <input value="Multiplication(X)" onclick="Mul()" type="button">
+                <input value="Division(/)" onclick="Div()" type="button">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p id="pResult">
+                    Result:
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+    function Add() {
+
+        let number1 = Number(document.getElementById('number1').value);
+        let number2 = Number(document.getElementById('number2').value);
+        let pResult = number1 + number2;
+        document.getElementById('pResult').innerHTML = pResult;
+    }
+
+    function Sub() {
+        let number1 = Number(document.getElementById('number1').value);
+        let number2 = Number(document.getElementById('number2').value);
+        let pResult = number1 - number2;
+        document.getElementById('pResult').innerHTML = pResult;
+    }
+
+    function Mul() {
+        let number1 = Number(document.getElementById('number1').value);
+        let number2 = Number(document.getElementById('number2').value);
+        let pResult = number1 * number2;
+        document.getElementById('pResult').innerHTML = pResult;
+    }
+
+    function Div() {
+        let number1 = Number(document.getElementById('number1').value);
+        let number2 = Number(document.getElementById('number2').value);
+        let pResult = number1 / number2;
+        document.getElementById('pResult').innerHTML = pResult;
+    }
+</script>
+
+</html>
